@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Luxury Tanz – Our story, values, and commitment to premium beauty.">
+  <title>About – Luxury Tanz</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(201,169,110,0.1); margin-top: 4rem; }
+    .value-block { background: var(--dark); padding: 3rem 2.5rem; }
+    .value-icon { color: var(--accent); margin-bottom: 1.4rem; }
+    .value-title { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--white); margin-bottom: 0.6rem; }
+    .value-text { font-size: 0.85rem; color: var(--grey); line-height: 1.85; }
+    .timeline { display: flex; flex-direction: column; gap: 0; }
+    .timeline-item { display: grid; grid-template-columns: 120px 1fr; gap: 2rem; padding: 2.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .timeline-item:last-child { border-bottom: none; }
+    .timeline-year { font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--accent); font-weight: 500; }
+    .timeline-title { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--white); margin-bottom: 0.4rem; }
+    .timeline-text { font-size: 0.85rem; color: var(--grey); line-height: 1.8; }
+    .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .team-card { background: var(--dark-grey); border: 1px solid rgba(255,255,255,0.04); overflow: hidden; transition: transform 0.3s; }
+    .team-card:hover { transform: translateY(-4px); }
+    .team-img { aspect-ratio: 1; background: var(--mid-grey); }
+    .team-body { padding: 1.4rem; }
+    .team-name { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--white); margin-bottom: 0.2rem; }
+    .team-role { font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); }
+    .stat-bar { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(201,169,110,0.1); }
+    .stat-block { padding: 2.5rem 1.5rem; text-align: center; border-right: 1px solid rgba(201,169,110,0.08); }
+    .stat-block:last-child { border-right: none; }
+    .stat-big { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 300; color: var(--accent); line-height: 1; }
+    .stat-small { font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--grey); margin-top: 0.5rem; }
+    @media(max-width:768px){
+      .values-grid { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 80px 1fr; }
+      .team-grid { grid-template-columns: 1fr 1fr; }
+      .stat-bar { grid-template-columns: 1fr 1fr; }
+      .stat-block { border-right: none; border-bottom: 1px solid rgba(201,169,110,0.08); }
+    }
+    @media(max-width:480px){ .team-grid { grid-template-columns: 1fr; } .stat-bar { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+
+<div class="page-hero">
+  <div class="page-hero-content fade-up">
+    <div class="page-hero-eyebrow">Our Story</div>
+    <h1>About <em>Luxury Tanz</em></h1>
+    <p class="page-hero-sub">Born from a passion for effortless beauty — we believe radiance should be simple, powerful, and within everyone's reach.</p>
+  </div>
+</div>
+
+<!-- Stats -->
+<div class="stat-bar" style="background:var(--dark)">
+  <div class="stat-block"><div class="stat-big">5K+</div><div class="stat-small">Happy Customers</div></div>
+  <div class="stat-block"><div class="stat-big">★4.9</div><div class="stat-small">Average Rating</div></div>
+  <div class="stat-block"><div class="stat-big">12+</div><div class="stat-small">Premium Products</div></div>
+  <div class="stat-block"><div class="stat-big">100%</div><div class="stat-small">Natural Glow</div></div>
+</div>
+
+<!-- Story -->
+<section class="section-pad dark-section">
+  <div class="grid-2">
+    <div class="fade-up">
+      <div class="section-label">Who We Are</div>
+      <h2 class="section-title">Beauty That Works<br><em>For You</em></h2>
+      <p style="color:var(--light-grey);font-size:0.95rem;line-height:2;margin-top:1.4rem">Luxury Tanz was created for every woman who wants to feel confidently beautiful without spending hours on complicated routines. We believe your glow should be as effortless as you are.</p>
+      <p style="color:var(--light-grey);font-size:0.95rem;line-height:2;margin-top:1rem">From our very first formula to our growing collection, every product is developed with one goal: to make you feel incredible in your skin. We never compromise on ingredients, and we never stop improving.</p>
+      <p style="color:var(--light-grey);font-size:0.95rem;line-height:2;margin-top:1rem;margin-bottom:2rem">Our products are tested thoroughly, formulated with care, and designed to deliver visible results from the very first use.</p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+    <div class="fade-up d1">
+      <div style="aspect-ratio:4/5;background:var(--mid-grey);border:1px solid rgba(201,169,110,0.12);position:relative;overflow:hidden">
+        <div class="img-ph">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Brand Story Photo</span>
+          <span style="font-size:0.58rem;color:#444">images/about-story.jpg</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Values -->
+<section class="section-pad black-section">
+  <div class="section-label">What We Stand For</div>
+  <h2 class="section-title">Our Core Values</h2>
+  <div class="values-grid">
+    <div class="value-block fade-up">
+      <div class="value-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+      <div class="value-title">Uncompromising Quality</div>
+      <p class="value-text">We source only the finest, skin-safe ingredients. Every formula is tested, refined, and approved before it ever reaches your hands.</p>
+    </div>
+    <div class="value-block fade-up d1">
+      <div class="value-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <div class="value-title">Confidence for All</div>
+      <p class="value-text">Beauty has no size, age, or skin type. Our products are formulated to work beautifully on every body, every tone, every person.</p>
+    </div>
+    <div class="value-block fade-up d2">
+      <div class="value-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <div class="value-title">Thoughtful Formulation</div>
+      <p class="value-text">No harsh chemicals. No unnecessary fillers. Just clean, effective formulas that respect your skin and deliver on every promise.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section class="section-pad dark-section">
+  <div class="section-label">Our Journey</div>
+  <h2 class="section-title" style="margin-bottom:3rem">How We Got Here</h2>
+  <div class="timeline">
+    <div class="timeline-item fade-up">
+      <div class="timeline-year">2022</div>
+      <div><div class="timeline-title">The Idea</div><p class="timeline-text">Luxury Tanz started with a simple frustration — beautiful tanning products that were either too harsh, too messy, or too complicated. We decided to change that.</p></div>
+    </div>
+    <div class="timeline-item fade-up">
+      <div class="timeline-year">2023</div>
+      <div><div class="timeline-title">First Formula</div><p class="timeline-text">After months of research, testing, and refinement, our Signature Glow Cream was born. It sold out within the first week of launch.</p></div>
+    </div>
+    <div class="timeline-item fade-up">
+      <div class="timeline-year">2024</div>
+      <div><div class="timeline-title">The Collection Grows</div><p class="timeline-text">We launched our full Tanning Drops range and expanded to 12+ products, reaching over 5,000 customers across the UK and beyond.</p></div>
+    </div>
+    <div class="timeline-item fade-up">
+      <div class="timeline-year">2025</div>
+      <div><div class="timeline-title">What's Next</div><p class="timeline-text">New formulas, new product categories, and bigger ambitions — the Luxury Tanz journey is just getting started. Sign up to be the first to know.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-pad" style="background:var(--accent);text-align:center">
+  <h2 style="font-size:clamp(2rem,4vw,3rem);color:var(--black)">Ready to Glow?</h2>
+  <p style="color:rgba(0,0,0,0.6);margin:0.8rem auto 2rem;max-width:420px;font-size:0.95rem">Explore our full collection and find your perfect shade today.</p>
+  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+    <a href="products.html" class="btn" style="background:var(--black);color:var(--white)">Shop Products</a>
+    <a href="contact.html" class="btn" style="background:transparent;color:var(--black);border:1px solid rgba(0,0,0,0.3)">Contact Us</a>
+  </div>
+</section>
+
+<script src="../js/components.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luxury Tanz Tanning Creams – Rich, streak-free tanning creams for a flawless glow.">
+  <title>Tanning Creams – Luxury Tanz</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .feature-strip {
+      background: var(--dark-grey);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-bottom: 1px solid rgba(201,169,110,0.1);
+    }
+    .feature-item {
+      padding: 2rem 1.5rem;
+      border-right: 1px solid rgba(255,255,255,0.05);
+      display: flex; gap: 1rem; align-items: flex-start;
+    }
+    .feature-item:last-child { border-right: none; }
+    .feature-item svg { color: var(--accent); flex-shrink: 0; margin-top: 3px; }
+    .feature-item-title { font-size: 0.82rem; font-weight: 500; color: var(--white); margin-bottom: 0.2rem; letter-spacing: 0.05em; }
+    .feature-item-text { font-size: 0.78rem; color: var(--grey); }
+    .cream-spotlight {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+    }
+    .cream-spotlight-img {
+      aspect-ratio: 1;
+      background: var(--mid-grey);
+      border: 1px solid rgba(201,169,110,0.15);
+      position: relative; overflow: hidden;
+    }
+    .cream-spotlight-content .section-label { color: var(--accent); }
+    .cream-spotlight-content h2 { color: var(--white); }
+    .ingredients-list { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem; }
+    .ingredient { display: flex; align-items: center; gap: 0.8rem; font-size: 0.85rem; color: var(--light-grey); }
+    .ingredient::before { content: ''; width: 6px; height: 6px; background: var(--accent); display: block; flex-shrink: 0; }
+    @media(max-width:768px){
+      .feature-strip { grid-template-columns: 1fr 1fr; }
+      .feature-item { border-right: 1px solid rgba(255,255,255,0.05); }
+      .cream-spotlight { grid-template-columns: 1fr; gap:3rem; }
+    }
+    @media(max-width:480px){ .feature-strip { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<div class="page-hero">
+  <div class="page-hero-content fade-up">
+    <div class="page-hero-eyebrow">Category</div>
+    <h1>Tanning <em>Creams</em></h1>
+    <p class="page-hero-sub">Rich, velvety tanning creams that melt into the skin. Deeply hydrating, streak-free, and infused with skin-loving ingredients.</p>
+  </div>
+</div>
+
+<!-- Feature strip -->
+<div class="feature-strip">
+  <div class="feature-item">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <div><div class="feature-item-title">Streak-Free Formula</div><div class="feature-item-text">Guaranteed even application every time</div></div>
+  </div>
+  <div class="feature-item">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg>
+    <div><div class="feature-item-title">Develops in 4–8 Hours</div><div class="feature-item-text">Wake up to a beautiful, natural glow</div></div>
+  </div>
+  <div class="feature-item">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+    <div><div class="feature-item-title">Skin-Loving Ingredients</div><div class="feature-item-text">Nourishing oils and vitamins included</div></div>
+  </div>
+  <div class="feature-item">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    <div><div class="feature-item-title">Lasts Up to 7 Days</div><div class="feature-item-text">Long-lasting colour with daily moisturiser</div></div>
+  </div>
+</div>
+
+<!-- Spotlight product -->
+<section class="section-pad dark-section">
+  <div class="cream-spotlight">
+    <div class="cream-spotlight-img fade-up">
+      <div class="img-ph" style="background:#1e1e1e">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span>Hero Cream Photo</span>
+        <span style="font-size:0.58rem;color:#444">images/cream-hero.jpg</span>
+      </div>
+    </div>
+    <div class="cream-spotlight-content fade-up d1">
+      <span class="tag">New Formula</span>
+      <div class="section-label" style="margin-top:1rem">Featured Cream</div>
+      <h2 class="section-title">Signature Glow Cream</h2>
+      <p class="section-sub">Our most-loved tanning cream — now with an enhanced hydration complex that keeps your skin soft for up to 72 hours while delivering a deep, natural-looking tan.</p>
+      <div class="ingredients-list">
+        <div class="ingredient">Hyaluronic Acid – deep moisture lock</div>
+        <div class="ingredient">Vitamin E – antioxidant protection</div>
+        <div class="ingredient">Aloe Vera – soothing and cooling</div>
+        <div class="ingredient">DHA (natural) – streak-free colour</div>
+        <div class="ingredient">Coconut Oil – silky smooth texture</div>
+      </div>
+      <div style="display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap">
+        <button class="btn btn-primary btn-add-cart" data-product="Signature Glow Cream" style="border:none">Add to Cart – £24.99</button>
+        <a href="contact.html" class="btn btn-outline-light">Enquire</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- All Creams Grid -->
+<section class="section-pad black-section">
+  <div class="section-label">All Creams</div>
+  <h2 class="section-title" style="margin-bottom:3rem">The Creams Collection</h2>
+  <div class="grid-3">
+
+    <div class="product-card fade-up" data-product="Signature Glow Cream">
+      <div class="product-card-img">
+        <div class="img-ph" style="background:#252525"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span style="font-size:0.58rem;color:#444">images/cream-1.jpg</span></div>
+        <div class="product-badge">Bestseller</div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-name">Signature Glow Cream</div>
+        <p class="product-desc">The original. Buildable, streak-free, deeply moisturising.</p>
+        <div class="product-footer"><span class="product-price">£24.99</span><button class="btn-buy btn-add-cart">Buy Now</button></div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up d1" data-product="Hydra-Glow Body Cream">
+      <div class="product-card-img">
+        <div class="img-ph" style="background:#1e1e1e"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span style="font-size:0.58rem;color:#444">images/cream-2.jpg</span></div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-name">Hydra-Glow Body Cream</div>
+        <p class="product-desc">Deeply moisturising with a subtle golden shimmer.</p>
+        <div class="product-footer"><span class="product-price">£22.99</span><button class="btn-buy btn-add-cart">Buy Now</button></div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up d2" data-product="Velvet Tan Cream">
+      <div class="product-card-img">
+        <div class="img-ph" style="background:#1a1a1a"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span style="font-size:0.58rem;color:#444">images/cream-3.jpg</span></div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-name">Velvet Tan Cream</div>
+        <p class="product-desc">Silky smooth application, rich colour, zero streaks.</p>
+        <div class="product-footer"><span class="product-price">£26.99</span><button class="btn-buy btn-add-cart">Buy Now</button></div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up" data-product="Luxury Body Mousse">
+      <div class="product-card-img">
+        <div class="img-ph" style="background:#202020"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span style="font-size:0.58rem;color:#444">images/cream-4.jpg</span></div>
+        <div class="product-badge">Fan Fave</div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-name">Luxury Body Mousse</div>
+        <p class="product-desc">Ultra-light mousse for a deep, sun-kissed finish overnight.</p>
+        <div class="product-footer"><span class="product-price">£27.99</span><button class="btn-buy btn-add-cart">Buy Now</button></div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up d1" data-product="Dark Glow Cream">
+      <div class="product-card-img">
+        <div class="img-ph" style="background:#181818"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span style="font-size:0.58rem;color:#444">images/cream-5.jpg</span></div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-name">Dark Glow Cream</div>
+        <p class="product-desc">Deeper, richer formula for a more intense tan in fewer applications.</p>
+        <div class="product-footer"><span class="product-price">£28.99</span><button class="btn-buy btn-add-cart">Buy Now</button></div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up d2" data-product="Cream Bundle Set">
+      <div class="product-card-img">
+        <div class="img-ph" style="background:#141414"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span style="font-size:0.58rem;color:#444">images/cream-6.jpg</span></div>
+        <div class="product-badge">Bundle</div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-name">Cream Bundle Set</div>
+        <p class="product-desc">All three bestselling creams — save 20% when bought together.</p>
+        <div class="product-footer"><span class="product-price">£59.99</span><button class="btn-buy btn-add-cart">Buy Now</button></div>
+      </div>
+    </div>
+
+  </div>
+  <div style="text-align:center;margin-top:3rem">
+    <a href="products.html" class="btn btn-outline-light">View All Products</a>
+  </div>
+</section>
+
+<script src="../js/components.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Luxury Tanz – Get in touch with us via Instagram, email or our enquiry form.">
+  <title>Contact – Luxury Tanz</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .contact-layout { display: grid; grid-template-columns: 1fr 1.4fr; gap: 6rem; align-items: start; }
+    .contact-cards { display: flex; flex-direction: column; gap: 1rem; margin-top: 2.5rem; }
+    .contact-card {
+      display: flex; align-items: center; gap: 1.2rem;
+      padding: 1.2rem 1.4rem;
+      border: 1px solid rgba(255,255,255,0.07);
+      text-decoration: none; color: var(--light-grey);
+      transition: border-color 0.25s, color 0.25s, background 0.25s;
+    }
+    .contact-card:hover { border-color: rgba(201,169,110,0.35); color: var(--white); background: rgba(201,169,110,0.04); }
+    .cc-icon { width: 44px; height: 44px; flex-shrink: 0; background: rgba(201,169,110,0.1); display: flex; align-items: center; justify-content: center; color: var(--accent); }
+    .cc-label { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--grey); margin-bottom: 0.2rem; }
+    .cc-value { font-size: 0.92rem; }
+    .contact-form-wrap {
+      background: var(--dark-grey);
+      border: 1px solid rgba(255,255,255,0.05);
+      padding: 3rem;
+    }
+    .contact-form-title { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--white); margin-bottom: 0.4rem; }
+    .contact-form-sub { font-size: 0.85rem; color: var(--grey); margin-bottom: 2rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+    .contact-form { display: flex; flex-direction: column; gap: 1.2rem; }
+    .faq-list { display: flex; flex-direction: column; gap: 0; margin-top: 2.5rem; }
+    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .faq-q {
+      width: 100%; display: flex; justify-content: space-between; align-items: center;
+      padding: 1.2rem 0; background: none; border: none; color: var(--white);
+      font-size: 0.9rem; cursor: pointer; text-align: left; gap: 1rem;
+      font-family: 'Jost', sans-serif; letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+    .faq-q:hover { color: var(--accent); }
+    .faq-q svg { flex-shrink: 0; transition: transform 0.3s; color: var(--accent); }
+    .faq-q.open svg { transform: rotate(45deg); }
+    .faq-a { font-size: 0.85rem; color: var(--grey); line-height: 1.85; max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; }
+    .faq-a.open { max-height: 200px; padding-bottom: 1.2rem; }
+    @media(max-width:900px){ .contact-layout { grid-template-columns: 1fr; gap:3rem; } .form-row { grid-template-columns: 1fr; } }
+    @media(max-width:500px){ .contact-form-wrap { padding: 1.8rem; } }
+  </style>
+</head>
+<body>
+
+<div class="page-hero">
+  <div class="page-hero-content fade-up">
+    <div class="page-hero-eyebrow">Say Hello</div>
+    <h1>Get in <em>Touch</em></h1>
+    <p class="page-hero-sub">Whether you have a product question, a collaboration idea, or just want to say hello — we'd love to hear from you.</p>
+  </div>
+</div>
+
+<section class="section-pad dark-section">
+  <div class="contact-layout">
+
+    <!-- Left: Info -->
+    <div class="fade-up">
+      <div class="section-label">Contact Info</div>
+      <h2 class="section-title">Let's Talk <em>Beauty</em></h2>
+      <p style="color:var(--light-grey);font-size:0.92rem;line-height:1.95;margin-top:0.5rem">Have a question about a product, want to place a larger order, or just want to connect? Reach us via Instagram or email — we aim to reply within 24 hours.</p>
+
+      <div class="contact-cards">
+        <a href="https://instagram.com/luxurytanz" target="_blank" rel="noopener" class="contact-card">
+          <div class="cc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></div>
+          <div><div class="cc-label">Instagram</div><div class="cc-value">@luxurytanz</div></div>
+        </a>
+        <a href="mailto:hello@luxurytanz.com" class="contact-card">
+          <div class="cc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><div class="cc-label">Email</div><div class="cc-value">hello@luxurytanz.com</div></div>
+        </a>
+        <a href="https://tiktok.com/@luxurytanz" target="_blank" rel="noopener" class="contact-card">
+          <div class="cc-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.31 6.31 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg></div>
+          <div><div class="cc-label">TikTok</div><div class="cc-value">@luxurytanz</div></div>
+        </a>
+      </div>
+
+      <!-- FAQ -->
+      <div style="margin-top:3.5rem">
+        <div class="section-label">FAQs</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--white);margin-bottom:0.5rem">Quick Answers</h3>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">How long do tanning drops take to develop? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Our drops typically develop in 4–6 hours. We recommend applying before bed and washing off any guide colour in the morning to reveal your glow.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">Are your products suitable for sensitive skin? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Yes! Our formulas are free from harsh chemicals and are tested to be gentle on most skin types. We always recommend a patch test 24 hours before first use.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">Do you ship outside the UK? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">We currently ship across the UK and Ireland. International shipping is coming soon — sign up to our newsletter to be the first to know.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">How do I avoid streaks with creams? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Always exfoliate and moisturise dry areas (knees, elbows, ankles) before applying. Use circular motions and blend thoroughly. Wash hands immediately after applying.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="contact-form-wrap fade-up d1">
+      <div class="contact-form-title">Send an Enquiry</div>
+      <p class="contact-form-sub">Fill in the form below and we'll get back to you as soon as possible.</p>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">First Name</label>
+            <input type="text" class="form-input" placeholder="Sarah" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Last Name</label>
+            <input type="text" class="form-input" placeholder="Smith">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" placeholder="hello@email.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Subject</label>
+          <select class="form-input form-select" style="cursor:pointer">
+            <option value="" disabled selected>Select a subject…</option>
+            <option>Product Question</option>
+            <option>Order Enquiry</option>
+            <option>Wholesale / Collaboration</option>
+            <option>General Enquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Tell us how we can help…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;border:none;padding:1.1rem;font-size:0.8rem">Send Enquiry</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- Social CTA strip -->
+<section style="background:var(--black);padding:4rem 5%;text-align:center;border-top:1px solid rgba(201,169,110,0.1)">
+  <p style="font-size:0.72rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem">Follow for Glow Tips &amp; Inspiration</p>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--white);margin-bottom:2rem">Find Us on Social</h2>
+  <div style="display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap">
+    <a href="https://instagram.com/luxurytanz" target="_blank" rel="noopener" class="btn btn-primary">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display:inline;margin-right:0.5rem;vertical-align:-2px"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      Instagram
+    </a>
+    <a href="https://tiktok.com/@luxurytanz" target="_blank" rel="noopener" class="btn btn-outline-light">TikTok</a>
+  </div>
+</section>
+
+<script src="../js/components.js"></script>
+<script src="../js/main.js"></script>
+<script>
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = answer.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-q').forEach(q => q.classList.remove('open'));
+    if (!isOpen) {
+      answer.classList.add('open');
+      btn.classList.add('open');
+    }
+  }
+</script>
+</body>
+</html>
